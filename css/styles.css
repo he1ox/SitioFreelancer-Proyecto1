@@ -1,0 +1,31 @@
+/* Paleta de colores */
+:root {
+    --blanco: #FFF;
+    --obscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+
+    --fuente-principal: 3.8rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+
+/* 1rem = 10 px */
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--primario);
+}
+
+.titulo span {
+    font-size: 2rem;
+}
