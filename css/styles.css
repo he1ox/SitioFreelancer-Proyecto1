@@ -42,8 +42,11 @@ body{
 
 .navegacion-principal {
     background-color: var(--secundario);
+    padding: 1rem;
 }
 
+
 .navegacion-principal a {
-    background-color: var(--primario);
+    color: var(--blanco);
+    text-decoration: none;
 }
