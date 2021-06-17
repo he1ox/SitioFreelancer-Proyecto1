@@ -28,12 +28,21 @@ body{
 }
 /* 1rem = 10 px */
 
+.sombra {
+    box-shadow: 8px 7px 17px -4px rgba(0,0,0,0.5);
+
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
 /* Navegacion Principal */
 .contenedor {
     /*Para centrar contenido*/
     max-width: 120rem;
     margin: 0 auto;
 }
+
 
 
 .boton {
@@ -138,6 +147,7 @@ h1, h2, h3 {
     background-size: cover;
     height: 45rem;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero {
