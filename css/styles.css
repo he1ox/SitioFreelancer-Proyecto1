@@ -13,8 +13,12 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
 }
-
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
@@ -71,4 +75,12 @@ body{
         justify-content: space-between;
 
     }
+}
+
+.hero {
+    background-image: url(/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    padding: 2rem;
 }
