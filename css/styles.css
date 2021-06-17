@@ -11,6 +11,7 @@
     --fuente-principal: 3.8rem;
 }
 
+/* Globales */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -22,40 +23,18 @@ html {
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
+    /* Linear Gradient , de abajo hacia arriba, gris en el fondo y blanco al inicio */
+    background-image: linear-gradient(to top,#DFE9F3 0%, var(--blanco) 100%);
 }
-
 /* 1rem = 10 px */
 
-h1 {
-    font-size: 3.8rem;
-}
-h2 {
-    font-size: 2.8rem;
-}
-h3 {
-    font-size: 1.9rem;
-}
-
-
-h1, h2, h3 {
-    text-align: center;
-}
-
-.titulo {
-    text-align: center;
-    font-size: 3.8rem;
-    color: var(--primario);
-}
-
-.titulo span {
-    font-size: 2rem;
-}
-
+/* Navegacion Principal */
 .contenedor {
     /*Para centrar contenido*/
     max-width: 120rem;
     margin: 0 auto;
 }
+
 
 .boton {
     background-color: var(--secundario);
@@ -72,15 +51,40 @@ h1, h2, h3 {
 }
 
 .boton:hover {
+    /* mientras el cursor este encima del boton, tiene una transicion suave de 0.5s */
     transition-duration: .5s;
     background-color: #008796;
 }
 
-@media (min-width: 768px) {
-    .boton {
-        width: auto;
-    }
+/* Tipografia */
+h1 {
+    font-size: 3.8rem;
 }
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.9rem;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Titulos */
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--primario);
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+
+
 
 
 .nav-bg {
@@ -109,6 +113,7 @@ h1, h2, h3 {
     background-color: var(--primario);
 }
 
+/* Media Querys */
 @media (min-width: 768px) {
     .navegacion-principal {
         display: flex;
@@ -118,7 +123,15 @@ h1, h2, h3 {
 
 }
 
+@media (min-width: 768px) {
+    /* media query para resetear el tamaño del boton */
+    .boton {
+        width: auto;
+    }
+}
 
+
+/* hero */
 .hero {
     background-image: url(/img/hero.jpg);
     background-repeat: no-repeat;
