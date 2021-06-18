@@ -22,15 +22,6 @@ html {
     box-sizing: inherit;
   }
 
-/* scroll snaps */
-.scroll-here,
-.navegacion-principal,
-.formulario {
-    /* align -> ahi llega el scrol snap */
-    scroll-snap-align: center;
-    /* se para y no te deja pasar el formulario de contacto */
-    scroll-snap-stop: always;
-}
 
 body{
     font-size: 16px;
