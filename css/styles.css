@@ -15,10 +15,22 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    /* scroll snap hacia abajo */
+    scroll-snap-type: y proximity;
 }
 *, *:before, *:after {
     box-sizing: inherit;
   }
+
+/* scroll snaps */
+.scroll-here,
+.navegacion-principal,
+.formulario {
+    /* align -> ahi llega el scrol snap */
+    scroll-snap-align: center;
+    /* se para y no te deja pasar el formulario de contacto */
+    scroll-snap-stop: always;
+}
 
 body{
     font-size: 16px;
@@ -192,6 +204,7 @@ h1, h2, h3 {
     align-items: flex-end;
 }
 
+
 /* servicios */
 
 /* Display Grid : Define como se colocan
@@ -199,6 +212,8 @@ los elementos en una area determinada, ya definida.
 Puede operarse en 2 dimensiones, columnas y filas.
 grid : filas / columnas 
 column-gap : separacion entre columnas. */
+
+
 
 @media (min-width: 768px) {
     .servicios {
@@ -275,5 +290,6 @@ column-gap : separacion entre columnas. */
     border: none;
     padding: 1.5rem;
     border-radius: 1.5rem;
+    outline: none;
 }
 
