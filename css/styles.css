@@ -57,12 +57,14 @@ body{
     text-transform: uppercase;
     width: 90%;
     text-align: center;
+    border: none;
 }
 
 .boton:hover {
     /* mientras el cursor este encima del boton, tiene una transicion suave de 0.5s */
     transition-duration: .5s;
     background-color: #008796;
+    cursor: pointer;
 }
 
 /* Tipografia */
@@ -94,7 +96,25 @@ h1, h2, h3 {
 
 
 
+/* utilidades */
 
+.w-100 {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .w-100 {
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
+}
 
 .nav-bg {
     background-color: var(--secundario);
@@ -211,5 +231,49 @@ column-gap : separacion entre columnas. */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+/* contacto */
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%); /* Utiliza el valor mas pequeño*/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+/* selector de atributos */
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
 }
 
