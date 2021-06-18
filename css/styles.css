@@ -284,3 +284,12 @@ column-gap : separacion entre columnas. */
     outline: none;
 }
 
+/* footer */
+.footer {
+    margin-top: 2rem;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 1.8rem;
+}
