@@ -172,3 +172,22 @@ h1, h2, h3 {
     align-items: flex-end;
 }
 
+/* servicios */
+
+/* Display Grid : Define como se colocan
+los elementos en una area determinada, ya definida.
+Puede operarse en 2 dimensiones, columnas y filas.
+grid : filas / columnas 
+column-gap : separacion entre columnas. */
+
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid: 1fr / repeat(3,1fr);
+        column-gap: 1rem;
+    }
+}
+
+.servicios {
+    display: grid;
+}
