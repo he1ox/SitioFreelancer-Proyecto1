@@ -28,7 +28,6 @@ body{
     font-family: 'Krub', sans-serif;
     /* Linear Gradient , de abajo hacia arriba, gris en el fondo y blanco al inicio */
     background-image: linear-gradient(to top,#DFE9F3 0%, var(--blanco) 100%);
-    height: 100vh;
 }
 
 img{
