@@ -1,5 +1,6 @@
-# Freelancer Project #1
-### Web Design & Development Course
+<h1 align="center">Freelancer Project #1</h1>
+<h3>Web Design & Development Course </h3>
+
 
 <ul>
   <li>HTML</li>
