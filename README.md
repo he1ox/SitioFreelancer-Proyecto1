@@ -8,6 +8,7 @@
   <li>Responsive Web Design</li>
   <li>Flexbox</li>
   <li>Grid</li>
+  <li>CSS Modules & Utily First</li>
 </ul>
 
 <h3>Hosted in https://jlopezg.netlify.app/</h2>
